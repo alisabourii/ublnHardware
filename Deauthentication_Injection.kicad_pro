@@ -506,11 +506,19 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.4,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "POWER",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.8,
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -518,7 +526,20 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "POWER",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "VCC"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "3.3"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -661,7 +682,7 @@
         "uuid": "bbc44862-91bc-4951-850f-2a46a3a91877"
       }
     ],
-    "used_designators": "C1,SW1-6,#PWR1-9,J1-2,U1-2",
+    "used_designators": "C1,SW1-6,#PWR1-10,J1-2,U1-2",
     "variants": []
   },
   "sheets": [
